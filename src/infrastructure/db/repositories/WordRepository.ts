@@ -6,7 +6,8 @@ import path from 'path';
 
 export class WordRepository implements WordRepositoryInterface {
   async findAll(): Promise<Word[]> {
-    const filePath = path.join(__dirname, '../data/H29_Habatanforstudents.csv');
+    const rootDir = process.cwd();
+    const filePath = path.join(rootDir, 'resources', 'H29_Habatanforstudents.csv');
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const lines = fileContent.split('\n');
     return lines
