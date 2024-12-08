@@ -3,7 +3,8 @@
 兵庫県教育委員会が提供する英単語を取得できるRESTful APIです。
 
 ## APIエンドポイント
-開発環境host: http://localhost:3000
+- 開発環境host: http://localhost:3000
+- 本番環境host: https://vocab-api-3200862867fa.herokuapp.com
 
 ### 全件取得
 
