@@ -3,12 +3,12 @@ version: "3.8"
 services:
   core:
     build:
-      context: .
+      context: ./api
       dockerfile: Dockerfile
     ports:
       - ${PORT}:${PORT}
     volumes:
-      - ./src:/app/src
+      - ./api/src:/app/src
     environment:
       - NODE_ENV=${NODE_ENV}
       - PORT=${PORT}
