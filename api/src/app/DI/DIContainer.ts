@@ -12,7 +12,11 @@ export class DIContainer {
   }
 
   public static register<T>(token: string, clazz: new () => T): void {
-    DIContainer.registry.set(token, new clazz())
+    if (!DIContainer.registry.has(token)) {
+      DIContainer.registry.set(token, new clazz())
+    } else {
+      throw new Error('The given token has been assigned.')
+    }
   }
 
   public static resolve<T>(token: string): T {

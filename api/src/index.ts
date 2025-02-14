@@ -12,9 +12,13 @@ const PORT: number = Number(process.env.PORT) || 3000
 
 const app = express()
 
-const container = DIContainer.getInstance()
-DIContainer.register<IGetVocabsQuery>('IGetVocabsQuery', GetVocabsQuery)
-DIContainer.register<IGetVocabQuery>('IGetVocabQuery', GetVocabQuery)
+try {
+  DIContainer.register<IGetVocabsQuery>('IGetVocabsQuery', GetVocabsQuery)
+  DIContainer.register<IGetVocabQuery>('IGetVocabQuery', GetVocabQuery)
+} catch (e) {
+  console.error('Server cannot start properly because of DI problems')
+  process.exit()
+}
 
 app.use('/vocabs', vocabs)
 
