@@ -1,5 +1,5 @@
-import { HttpError } from "../errors/HttpError";
-import { InternalServerError } from "../errors/InternalServerError";
+import { HttpError } from '../errors/HttpError'
+import { InternalServerError } from '../errors/InternalServerError'
 
 /**
  * ErrorをHttpErrorにパースします
@@ -8,8 +8,8 @@ import { InternalServerError } from "../errors/InternalServerError";
  */
 export function handleErrorAsHttpError(err: unknown): HttpError {
   if (err instanceof HttpError) {
-    return err;
+    return err
   } else {
-    return new InternalServerError("サーバーエラーが発生しました。");
+    return new InternalServerError('サーバーエラーが発生しました。')
   }
 }

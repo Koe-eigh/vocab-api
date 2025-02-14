@@ -1,6 +1,6 @@
-import { GetVocabsInputPort } from "./inputs/GetVocabsInputPort";
-import { VocabReadModel } from "./readModels/VocabReadModel";
+import { GetVocabsInputPort } from './inputs/GetVocabsInputPort'
+import { VocabReadModel } from './readModels/VocabReadModel'
 
 export interface IGetVocabsQuery {
-  execute(input: GetVocabsInputPort): Promise<VocabReadModel[]>;
+  execute(input: GetVocabsInputPort): Promise<VocabReadModel[]>
 }

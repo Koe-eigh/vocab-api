@@ -1,3 +1,3 @@
 export interface GetVocabInputPort {
-  vocabId(): number;
+  vocabId(): number
 }
