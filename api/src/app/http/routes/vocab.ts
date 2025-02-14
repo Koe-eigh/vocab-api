@@ -1,6 +1,6 @@
 import express from "express";
-import { GetVocabsAction } from "../actions/vocab/GetVocabsAction";
-import { GetVocabAction } from "../actions/vocab/GetVocabAction";
+import { GetVocabsAction } from "../actions/vocabs/GetVocabsAction";
+import { GetVocabAction } from "../actions/vocabs/GetVocabAction";
 
 const router = express.Router();
 
