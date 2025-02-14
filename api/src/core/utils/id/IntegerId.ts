@@ -18,7 +18,7 @@ export class IntegerId {
 
     if (value < IntegerId.MIN || value > IntegerId.MAX) {
       throw new Error(
-        `ID must be smaller than ${IntegerId.MAX} and greater than ${IntegerId.MIN}`
+        `ID must be smaller than ${IntegerId.MAX} and greater than ${IntegerId.MIN}`,
       );
     }
   }

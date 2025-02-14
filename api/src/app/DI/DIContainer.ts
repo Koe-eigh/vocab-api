@@ -15,7 +15,7 @@ export class DIContainer {
     if (!DIContainer.registry.has(token)) {
       DIContainer.registry.set(token, new clazz());
     } else {
-      throw new Error("The given token has been assigned.")
+      throw new Error("The given token has been assigned.");
     }
   }
 

@@ -16,7 +16,7 @@ export class Vocab {
     word: VocabWord,
     types: VocabType[],
     meanings: VocabMeaning[],
-    examples: VocabExample[]
+    examples: VocabExample[],
   ) {
     this._id = id;
     this._word = word;

@@ -11,7 +11,7 @@ export class GetVocabsQuery implements IGetVocabsQuery {
     const filePath = path.join(
       rootDir,
       "resources",
-      "H29_Habatanforstudents.csv"
+      "H29_Habatanforstudents.csv",
     );
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const lines = fileContent.split("\n");
@@ -46,7 +46,7 @@ export class GetVocabsQuery implements IGetVocabsQuery {
           word.replace(/"/g, "").trim(),
           types.replace(/"/g, "").trim(),
           meanings.replace(/[\r\n]+/g, "").trim(),
-          examples
+          examples,
         );
       });
   }

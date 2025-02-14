@@ -4,7 +4,7 @@ export class VocabReadModel {
     private readonly _word: string,
     private readonly _types: string,
     private readonly _meanings: string,
-    private readonly _examples: string
+    private readonly _examples: string,
   ) {}
 
   public get id(): number {
