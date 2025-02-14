@@ -20,6 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: vocab-api/api
 
       - name: Run Prettier check
         run: npx prettier --check .
+        working-directory: vocab-api/api
