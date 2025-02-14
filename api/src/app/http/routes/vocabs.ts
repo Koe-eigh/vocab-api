@@ -1,10 +1,10 @@
-import express from "express";
-import { GetVocabsAction } from "../actions/vocabs/GetVocabsAction";
-import { GetVocabAction } from "../actions/vocabs/GetVocabAction";
+import express from 'express'
+import { GetVocabsAction } from '../actions/vocabs/GetVocabsAction'
+import { GetVocabAction } from '../actions/vocabs/GetVocabAction'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get("/", GetVocabsAction);
-router.get("/:id", GetVocabAction);
+router.get('/', GetVocabsAction)
+router.get('/:id', GetVocabAction)
 
-export default router;
+export default router
