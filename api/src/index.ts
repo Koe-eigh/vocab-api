@@ -1,6 +1,6 @@
 import express from "express";
 
-import vocabs from "./app/http/routes/vocab";
+import vocabs from "./app/http/routes/vocabs";
 
 import { DIContainer } from "./app/DI/DIContainer";
 import { IGetVocabsQuery } from "./core/vocabs/queries/IGetVocabsQuery";
